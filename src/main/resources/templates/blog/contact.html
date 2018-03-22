@@ -6,7 +6,7 @@
     <title>Contact page</title>
     <link rel="stylesheet" th:href="@{/css/contact_styles.css}" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Francois+One|Mina" rel="stylesheet">
-    <link rel="stylesheet" th:href="@{fontello/css/fontello.css}" type="text/css">
+    <link rel="stylesheet" th:href="@{/fontello/css/fontello.css}" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
@@ -29,17 +29,23 @@
                 <!--<p th:if="${info}" th:text:="${info}"></p>-->
 
                 <form th:action="@{/contact}" th:object="${response}" method="post">
-                    <input type="text" th:value="${response.username}" th:field="*{username}"/>
-                    <input type="text" th:value="${response.mail}" th:field="*{mail}"/>
-                    <input type="text" th:value="${response.topic}" th:field="*{topic}"/>
-                    <textarea  th:value="${response.content}" th:field="*{content}"/>
+                    <label>Name:</label>
+                    <input class="user_data" type="text" th:value="${response.user}" th:field="*{user}"/>
+                    <label>E-mail:</label>
+                    <input class="user_data" type="text" th:value="${response.email}" th:field="*{email}"/>
+                    <label>Topic:</label>
+                    <input class="user_data" type="text" th:value="${response.topic}" th:field="*{topic}"/>
+                    <label>Your message:</label>
+                    <textarea class="user_data" id="user_text_area" th:value="${response.content}"
+                              th:field="*{content}"/>
+                    <input id="submit_button" type="submit" value="Click to send!">
 
                 </form>
-               
+
             </div>
 
             <div id="box_two">
-                <img id="image" src="images/envelop.jpg" alt="envelope">
+                <img id="image" th:src="@{/images/envelop.jpg}" alt="envelope">
             </div>
 
         </div>
@@ -48,6 +54,5 @@
 </main>
 <footer th:insert="blog/fragments/fragments :: footer"></footer>
 </body>
-
 </html>
 

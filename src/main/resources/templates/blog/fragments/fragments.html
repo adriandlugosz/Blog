@@ -7,16 +7,16 @@
 <body>
 
 <div th:fragment="navi">
-    <a th:href="@{/index}" class="wrapper">Main page
-        <div class="box">7</div>
-    </a>
+    <a th:href="@{/index}">Main page</a>
     <a th:href="@{/cooperation}">Cooperation</a>
-    <a th:href="@{/contact}">Contact</a>
+    <a th:href="@{/contact/form}" class="wrapper">Contact
+        <div class="box"><p th:text="${info}"/></div>
+    </a>
 </div>
 
 <div th:fragment="footer">
     Serials Blog &copy; 2018: Adrian Długosz
-    <i class="icon-mail">dlugosz.ad@gmail.com</i>
+    <i th:class="icon-mail">dlugosz.ad@gmail.com</i>
     <a href="http://jigsaw.w3.org/css-validator/check/referer">
         <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Poprawny CSS!"/>
     </a>

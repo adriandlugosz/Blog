@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml">
-	<head>
-		
-		<meta charset="utf-8">
-		<title>Contact page</title>
-		<link rel="stylesheet" th:href="@{/css/cooperation_styles.css}" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Francois+One|Mina" rel="stylesheet">
-		<link rel="stylesheet" th:href="@{fontello/f2/css/fontello.css}" type="text/css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 
-	</head>
+    <meta charset="utf-8">
+    <title>Contact page</title>
+    <link rel="stylesheet" th:href="@{/css/cooperation_styles.css}" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Mina" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/fontello/css/fontello.css}" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<body>
-		<header>
-			<h1>Cooperation</h1>
-			<nav th:insert="blog/fragments/fragments :: navi"></nav>
+</head>
 
-		</header>
+<body>
+<header>
+    <h1>Cooperation</h1>
+    <nav th:insert="blog/fragments/fragments :: navi"></nav>
 
-		<main>
-				<div class="container">
-					<div class="box_container responsive"><h2>What about me?</h2>
-						 
-						<p>My name is Adrian Długosz. I am twenty six years old and come from small village which is located circa 60 km east of Kielce. I have been leaving in Warsaw since I got into university. I have graduated from Warsaw University of Technology and  got a diploma of Master Degree in the field of Civil Engineering. I was working for one and a half year as a designer assistant. I resigned from my previous work and since that time I have been learning programming. In the meantime I was attending a daily course on Junior Java Developer in Akademia Kodu, which lasted for five weeks.
-						<br>
-						I would like to start my career as a Junior Java Developer. I wish my dreams come true!</p>
+</header>
 
-					</div>
+<main>
+    <div class="container">
+        <div class="box_container responsive"><h2>What about me?</h2>
 
-					<div class="box_container responsive"><h2>What can I offer?</h2>
-						<ul>
-							<li>full commitment</li>
-							<li>hard work</li>
-							<li>persistence</li>
-							<li>responsibility</li>
-							<li>loyalty</li>
-						</ul>
-					</div>
+            <p>My name is Adrian Długosz. I am twenty six years old and come from small village which is located circa
+                60 km east of Kielce. I have been leaving in Warsaw since I got into university. I have graduated from
+                Warsaw University of Technology and got a diploma of Master Degree in the field of Civil Engineering. I
+                was working for one and a half year as a designer assistant. I resigned from my previous work and since
+                that time I have been learning programming. In the meantime I was attending a daily course on Junior
+                Java Developer in Akademia Kodu, which lasted for five weeks.
+                <br>
+                I would like to start my career as a Junior Java Developer. I wish my dreams come true!</p>
 
-					<div class="box_container responsive">
-						<h2>If you want to contact :)</h2>
-						<i class="icon-mail-alt">dlugosz.ad@gmail.com</i><br><br>
+        </div>
 
-						<a href="https://www.linkedin.com/in/adriandługosz/" target="_blank"><i class="icon-linkedin-squared">linkedin.com</i></a><br><br>
+        <div class="box_container responsive"><h2>What can I offer?</h2>
+            <ul>
+                <li>full commitment</li>
+                <li>hard work</li>
+                <li>persistence</li>
+                <li>responsibility</li>
+                <li>loyalty</li>
+            </ul>
+        </div>
 
-						<a href="https://github.com/adriandlugosz" target="_blank"><i class="icon-github-squared">github.com</i></a><br><br>
+        <div class="box_container responsive">
+            <h2>If you want to contact :)</h2>
+            <i class="icon-mail-alt">dlugosz.ad@gmail.com</i><br><br>
 
-						<a href="https://www.facebook.com/people/Adrian-Długosz/100001330678791" target="_blank"><i class="icon-facebook-squared">facebook.com</i></a>	
-					</div>
-				</div>
-		</main>
+            <a href="https://www.linkedin.com/in/adriandługosz/" target="_blank"><i class="icon-linkedin-squared">linkedin.com</i></a><br><br>
 
-		<footer th:insert="blog/fragments/fragments :: footer"></footer>
-		
-	</body>
+            <a href="https://github.com/adriandlugosz" target="_blank"><i class="icon-github-squared">github.com</i></a><br><br>
+
+            <a href="https://www.facebook.com/people/Adrian-Długosz/100001330678791" target="_blank"><i
+                    class="icon-facebook-squared">facebook.com</i></a>
+        </div>
+    </div>
+</main>
+<footer th:insert="blog/fragments/fragments :: footer"></footer>
+</body>
 </html>

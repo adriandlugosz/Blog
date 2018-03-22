@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		
+		<meta charset="utf-8">
+		<title>That '70s page</title>
+		<link rel="stylesheet" th:href="@{/css/subpage_styles.css}" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Francois+One|Mina" rel="stylesheet">
+		<link rel="stylesheet" th:href="@{fontello/css/fontello.css}" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	</head>
+
+	<body>
+		<header>
+			<h1>That '70s Show</h1>
+			<nav th:insert="blog/fragments/fragments :: navi"></nav>
+
+		</header>
+
+		<main>
+				<h2>That '70s Show - eight seasons</h2>
+				<article class="text_article">
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper mauris at ex iaculis pellentesque. Fusce 
+					dictum hendrerit ullamcorper. Sed ut nunc turpis. Vivamus faucibus, odio ornare dictum finibus, augue nisl ultricies massa, id congue libero lacus vel turpis. Vivamus vehicula mi urna, eget lobortis quam commodo eleifend. Duis pretium nulla convallis mauris pulvinar consequat. Vivamus vel ultrices lacus. Maecenas ullamcorper nulla lorem, sed pretium diam tempor ac. Nunc quis mauris nec elit venenatis rutrum. Phasellus ornare posuere posuere. Proin mollis metus tincidunt ultrices efficitur. Curabitur ut congue nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam risus felis, scelerisque et quam sit amet, varius aliquet odio. Mauris porttitor risus ut mi aliquam, et commodo tellus elementum. Fusce porttitor feugiat leo, quis blandit neque pharetra et.
+					</p>
+
+
+					<figure>
+						<img class="responsive" src="images/thats70s_2.jpg" alt="Main characters">
+						Curious what are they doing now?
+					</figure>
+
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris semper mauris at ex iaculis pellentesque. Fusce dictum hendrerit ullamcorper. Sed ut nunc turpis. Vivamus faucibus, odio ornare dictum finibus, augue nisl ultricies massa, id congue libero lacus vel turpis. Vivamus vehicula mi urna, eget lobortis quam commodo eleifend. Duis pretium nulla convallis mauris pulvinar consequat. Vivamus vel ultrices lacus. Maecenas ullamcorper nulla lorem, sed pretium diam tempor ac. Nunc quis mauris nec elit venenatis rutrum. Phasellus ornare posuere posuere. Proin mollis metus tincidunt ultrices efficitur. Curabitur ut congue nunc. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam risus felis, scelerisque et quam sit amet, varius aliquet odio. Mauris porttitor risus ut mi aliquam, et commodo tellus elementum. Fusce porttitor feugiat leo, quis blandit neque pharetra et.
+					</p>
+
+				</article>
+		</main>
+		<footer th:insert="blog/fragments/fragments :: footer"></footer>
+	</body>
+
+</html>

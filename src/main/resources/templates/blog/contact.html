@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8">
+    <title>Contact page</title>
+    <link rel="stylesheet" th:href="@{/css/contact_styles.css}" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Francois+One|Mina" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{fontello/css/fontello.css}" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+<header>
+    <h1>Be in touch</h1>
+    <nav th:insert="blog/fragments/fragments :: navi"></nav>
+
+</header>
+
+<main>
+    <section class="white_section">
+        <h2>If you want to share your ideas with me, please fill in the form below!</h2>
+
+        <div class="flex-wrapper">
+
+            <div class="box_one responsive">
+
+                <!--<p th:if="${info}" th:text:="${info}"></p>-->
+
+                <form th:action="@{/contact}" th:object="${response}" method="post">
+                    <input type="text" th:value="${response.username}" th:field="*{username}"/>
+                    <input type="text" th:value="${response.mail}" th:field="*{mail}"/>
+                    <input type="text" th:value="${response.topic}" th:field="*{topic}"/>
+                    <textarea  th:value="${response.content}" th:field="*{content}"/>
+
+                </form>
+               
+            </div>
+
+            <div id="box_two">
+                <img id="image" src="images/envelop.jpg" alt="envelope">
+            </div>
+
+        </div>
+
+    </section>
+</main>
+<footer th:insert="blog/fragments/fragments :: footer"></footer>
+</body>
+
+</html>
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.w3.org/1999/xhtml">
+	<head>
+		<!--HEllo comment! -->
+		<meta charset="utf-8">
+		<title>Serials Blog</title>
+		<link rel="stylesheet" th:href="@{/css/index_styles.css}" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Francois+One|Mina" rel="stylesheet">
+		<link rel="stylesheet" th:href="@{fontello/css/fontello.css}" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	</head>
+	<body>
+		<header>
+			<h1>See what to watch in your free time!</h1>
+			<nav th:insert="blog/fragments/fragments :: navi"></nav>
+		</header>
+
+		<main>
+			<section class="white_section">
+					<img class="images responsive" src="images/friends.jpg" alt="Friends">
+					<h2>Friends</h2>
+					<p class="section_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta sed nulla in venenatis. Integer faucibus arcu a urna vestibulum, eu tempus dolor fermentum. In mauris lacus, iaculis eget elementum id, rutrum et est. Suspendisse non nibh leo. Ut ut leo mattis, viverra ante nec, ultricies massa. Praesent varius lobortis ante at congue. Sed convallis libero nibh, eu tincidunt urna faucibus vitae. Sed feugiat ut metus non fermentum. Sed gravida enim non ante blandit sodales.
+						<br><br>
+					<a th:href="@{/friends}" target="_blank">Click and see!</a></p>
+			</section>
+					<hr>
+			<section class="white_section">
+					<img class="images responsive" src="images/thats70s.jpg" alt="That's 70s">
+					<h2>That '70s Show</h2>
+					<p class="section_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta sed nulla in venenatis. Integer faucibus arcu a urna vestibulum, eu tempus dolor fermentum. In mauris lacus, iaculis eget elementum id, rutrum et est. Suspendisse non nibh leo. Ut ut leo mattis, viverra ante nec, ultricies massa. Praesent varius lobortis ante at congue. Sed convallis libero nibh, eu tincidunt urna faucibus vitae. Sed feugiat ut metus non fermentum. Sed gravida enim non ante blandit sodales.
+						<br><br>
+					<a th:href="@{/that70s}" target="_blank">Click and see!</a></p>
+			</section>
+					<hr>
+			<section class="white_section">
+					<img class="images responsive" src="images/suits.jpg" alt="Suits">
+					<h2>Suits</h2>
+					<p class="section_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta sed nulla in venenatis. Integer faucibus arcu a urna vestibulum, eu tempus dolor fermentum. In mauris lacus, iaculis eget elementum id, rutrum et est. Suspendisse non nibh leo. Ut ut leo mattis, viverra ante nec, ultricies massa. Praesent varius lobortis ante at congue. Sed convallis libero nibh, eu tincidunt urna faucibus vitae. Sed feugiat ut metus non fermentum. Sed gravida enim non ante blandit sodales.
+						<br><br>
+					<a th:href="@{/suits}" target="_blank">Click and see!</a></p>
+			</section>
+					<hr>
+				<section class="white_section">
+					<img class="images responsive" src="images/whitecollar.jpg" alt="Suits">
+					<h2>White Collar</h2>
+					<p class="section_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta sed nulla in venenatis. Integer faucibus arcu a urna vestibulum, eu tempus dolor fermentum. In mauris lacus, iaculis eget elementum id, rutrum et est. Suspendisse non nibh leo. Ut ut leo mattis, viverra ante nec, ultricies massa. Praesent varius lobortis ante at congue. Sed convallis libero nibh, eu tincidunt urna faucibus vitae. Sed feugiat ut metus non fermentum. Sed gravida enim non ante blandit sodales.
+						<br><br>
+					<a th:href="@{/whitecollar}" target="_blank">Click and see!</a></p>
+			</section>
+					<hr>
+				<section class="white_section">
+					<img class="images responsive" src="images/gameofthrones.jpg" alt="Game of Thrones">
+					<h2>Game of Thrones</h2>
+					<p class="section_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta sed nulla in venenatis. Integer faucibus arcu a urna vestibulum, eu tempus dolor fermentum. In mauris lacus, iaculis eget elementum id, rutrum et est. Suspendisse non nibh leo. Ut ut leo mattis, viverra ante nec, ultricies massa. Praesent varius lobortis ante at congue. Sed convallis libero nibh, eu tincidunt urna faucibus vitae. Sed feugiat ut metus non fermentum. Sed gravida enim non ante blandit sodales.
+						<br><br>
+					<a th:href="@{/gameofthrones}" target="_blank">Click and see!</a></p>
+			</section>
+					<hr>
+				<section class="white_section">
+					<img class="images responsive" src="images/howimetyourmother.jpg" alt="How I Met Your Mother">
+					<h2>How I Met Your Mother</h2>
+					<p class="section_text">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porta sed nulla in venenatis. Integer faucibus arcu a urna vestibulum, eu tempus dolor fermentum. In mauris lacus, iaculis eget elementum id, rutrum et est. Suspendisse non nibh leo. Ut ut leo mattis, viverra ante nec, ultricies massa. Praesent varius lobortis ante at congue. Sed convallis libero nibh, eu tincidunt urna faucibus vitae. Sed feugiat ut metus non fermentum. Sed gravida enim non ante blandit sodales.
+						<br><br>
+					<a th:href="@{/mother}" target="_blank">Click and see!</a></p>
+			</section>
+		</main>
+		<footer th:insert="blog/fragments/fragments :: footer"></footer>
+	</body>
+</html>

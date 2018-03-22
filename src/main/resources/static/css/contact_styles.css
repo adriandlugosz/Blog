@@ -1,0 +1,154 @@
+.box_one{
+    margin: auto;
+    width: 43%;
+    float: left;
+}
+
+#box_two{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 57%;
+}
+
+.flex-wrapper {
+    display: flex;
+}
+
+#image{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_data{
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+}
+
+#submit_button  {
+    background-color: #545151;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#user_text_area{
+    height: 150px;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+body{
+    background-color:  #303030;
+}
+
+header{
+    background-color: #545151; 
+    padding: 5px;
+    color: #ffffff;
+}
+
+nav{
+    text-align: center;
+    background-color: #0fc2dc;
+    font-family: Mina;
+}
+header nav a{
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header nav a:hover{
+    color: black;
+}
+
+main{
+    padding:5px;
+}
+
+main section{
+    overflow: hidden;
+    padding: 10px;
+}
+
+footer{
+    padding: 5px;
+    text-align: center;
+    font-family: Mina;
+    font-size: 16px;
+    background-color: #0fc2dc;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 4px;
+    font-family: Francois One;
+    text-shadow: 4px 4px grey;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 30px;
+    font-family: Francois One;
+}
+
+.white_section{
+    background-color:white;
+    font-family: Mina; 
+}
+
+.wrapper {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 10px; 
+}
+  
+.wrapper .box {
+    width: 20px;
+    padding: 2px;
+    color: white;
+    margin-left: -9px;
+    margin-top: -16px;
+    position: absolute;
+    top: -0;
+    left: 100%;
+    background: red;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 640px){
+    .responsive{
+        width: 100% !important;
+        height: auto;
+        }
+}
+
+footer img{
+    float: right;
+    margin-top: -2px;
+    border: 0;
+    width: 88px;
+    height: 31px;
+}
+
+

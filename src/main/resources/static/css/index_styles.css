@@ -1,0 +1,127 @@
+/*
+Font license info
+Copyright (C) 2016 by Dave Gandy
+Author:    Dave Gandy
+License:   SIL ()
+Homepage:  http://fortawesome.github.com/Font-Awesome/
+*/
+
+body{
+	background-color:  #303030;
+}
+
+header{
+	background-color: #545151; 
+	padding: 5px;
+	color: #ffffff;
+}
+
+nav{
+	text-align: center;
+	background-color: #0fc2dc;
+	font-family: Mina;
+}
+
+header nav a{
+	font-size: 25px;
+	color: white;
+	padding: 10px;
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+header nav a:hover{
+	color: black;
+}
+
+main{
+	padding:5px;
+}
+
+main section{
+	overflow: hidden;
+	padding: 10px;
+}
+
+footer{
+	padding: 5px;
+	text-align: center;
+	font-family: Mina;
+	font-size: 20px;
+	background-color: #0fc2dc;
+}
+
+h1{
+	color: white;
+	text-align: center;
+	font-size: 60px;
+	letter-spacing: 4px;
+	font-family: Francois One;
+	text-shadow: 4px 4px grey;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: 40px;
+	font-family: Francois One;
+}
+
+.images{
+	width: 50%;
+	height: auto;
+	float: right;
+}
+
+.section_text{
+font-size: 18px;
+text-align: left;
+}
+
+.white_section{
+	background-color:white; 
+}
+
+.section_text{
+	font-family: Mina;
+	font-size: 22px;
+}
+
+.wrapper {
+	display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 10px; 
+}
+  
+.wrapper .box {
+	width: 20px;
+    padding: 2px;
+    color: white;
+    margin-left: -10px;
+    margin-top: -18px;
+    position: absolute;
+    top: -0;
+    left: 100%;
+    background: red;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 640px){
+	.responsive{
+		width: 100% !important;
+		height: auto;
+		}
+}
+
+footer img{
+    float: right;
+    margin-top: 1px;
+    border: 0;
+    width: 88px;
+    height: 31px;
+}
+
+
+
+
+

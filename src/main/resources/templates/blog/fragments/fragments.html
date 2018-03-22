@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Fragments</title>
+</head>
+<body>
+
+<div th:fragment="navi">
+    <a th:href="@{/index}" class="wrapper">Main page
+        <div class="box">7</div>
+    </a>
+    <a th:href="@{/cooperation}">Cooperation</a>
+    <a th:href="@{/contact}">Contact</a>
+</div>
+
+<div th:fragment="footer">
+    Serials Blog &copy; 2018: Adrian Długosz
+    <i class="icon-mail">dlugosz.ad@gmail.com</i>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Poprawny CSS!"/>
+    </a>
+</div>
+
+
+</body>
+</html>

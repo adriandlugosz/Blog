@@ -1,0 +1,129 @@
+body{
+	background-color:  #303030;
+}
+
+header{
+	background-color: #545151; 
+	padding: 5px;
+	color: #ffffff;
+	
+/*if we want to add an image as background
+	background-image: url("images/");
+	background-position: center;
+	background-repeat: no-repeat;
+*/
+}
+
+nav{
+	text-align: center;
+	background-color: #0fc2dc;
+	font-family: Mina;
+}
+
+header nav a{
+	font-size: 20px;
+	color: white;
+	padding: 10px;
+	margin: 0 10px;
+	text-decoration: none;
+}
+
+header nav a:hover{
+	color: black;
+}
+
+main{
+	padding:5px;
+	background-color: white;
+}
+
+main{
+	overflow: hidden;
+	padding: 10px;
+}
+
+footer{
+	padding: 5px;
+	text-align: center;
+	font-family: Mina;
+	font-size: 18px;
+	background-color: #0fc2dc;
+}
+
+h1{
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	letter-spacing: 4px;
+	font-family: Francois One;
+	text-shadow: 4px 4px grey;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: 30px;
+	font-family: Francois One;
+}
+
+.text_article{
+	font-family: Mina;
+}
+/*
+main section article .image_description{
+text-align: center;
+font-size: 18px;
+padding: 5px;
+}
+*/
+
+main article img{
+	display: block;
+	margin: auto;
+	width: 80%;
+}
+
+main article figure{
+	text-align: center;
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+main article.text_article{
+	font-size: 18px;
+}
+
+.wrapper {
+	display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 10px; 
+}
+  
+.wrapper .box {
+    width: 20px;
+    padding: 2px;
+    color: white;
+    margin-left: -9px;
+    margin-top: -16px;
+    position: absolute;
+    top: -0;
+    left: 100%;
+    background: red;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 640px){
+.responsive{
+	width: 100% !important;
+	height: auto;
+	}
+}
+
+footer img{
+    float: right;
+    margin-top: -1px;
+    border: 0;
+    width: 88px;
+    height: 31px;
+}
+
